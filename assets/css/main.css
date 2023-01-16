@@ -66,11 +66,26 @@ section {
     max-height: 650px;
     transform: translateY(-20px);
     animation: yaga 5s infinite;
+    position: relative;
 }
 .container-fsc__img img {
     width: 100%;
     height: 100%;
 }
+.container-fsc__img::after{
+    content: '';
+    width:230px;
+    height: 20px;
+    background-color: #666666;
+    opacity: 0.4;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 50px);
+    transform: translate(-50%);
+    animation: yaga-shadow 5s infinite;
+}
+
 .container__fsc .btn_yellow {
     font-size: 20px;
     padding: 30px 45px;
@@ -103,6 +118,7 @@ section {
 @keyframes yaga {
     0% {
         transform: translateY(0px);
+        
     }
     50% {
         transform: translateY(-20px);
@@ -111,6 +127,21 @@ section {
         transform: translateY(0px);
     }
 }
+@keyframes yaga-shadow {
+    0% {
+        opacity: 0.3;
+        width: 180px;
+    }
+    50% {
+        opacity: 0.2;
+        width: 230px;
+    }
+    100% {
+        opacity: 0.3;
+        width: 180px;
+    }
+}
+
 
 /* about-us */
 .container__about-us {
