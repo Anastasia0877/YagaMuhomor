@@ -116,7 +116,7 @@ section {
 .container__about-us {
     position: relative;
 }
-.container__about-us::before {
+.container-about-us__info::after {
     content: '';
     width: 200px;
     height: 200px;
@@ -124,10 +124,10 @@ section {
     background: url("../img/mushroom-first.svg") center no-repeat;
     background-size: 200px;
     position: absolute;
-    top: calc(0% - 70px);
-    right: 50px;
+    bottom: calc(100% - 100px);
+    right: 0px;
 }
-.container__about-us::after {
+.container-about-us__info::before {
     content: '';
     width: 40px;
     height: 100px;
@@ -135,18 +135,20 @@ section {
     background: url("../img/circle.svg") center no-repeat;
     background-size: 40px 100px;
     position: absolute;
-    top: 120px;
+    top: 150px;
     left: 50%;
     transform: translate(-50%, 0);
 }
 .container-about-us__info {
     margin-bottom: 75px;
+    position: relative;
 }
 .container-about-us__title {
     margin-bottom: 15px;
 }
 .container-about-us__subtitle {
-    max-width: 700px;
+    font-size: 24px;
+    max-width: 800px;
     text-align: center;
 }
 .about-us__row {
