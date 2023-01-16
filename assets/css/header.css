@@ -4,8 +4,12 @@
     padding: 12px;
 }
 .logo {
+    max-width: 600px;
     position: relative;
     margin: 0 auto;
+}
+.logo img{
+    width: 100%;
 }
 .menu-icon {
     position: absolute;

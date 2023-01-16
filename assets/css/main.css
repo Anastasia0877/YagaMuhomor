@@ -3,6 +3,10 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    font-family: var(--arciform);
+}
+.font-title{
+    font-family: var(--luntik_bold);
 }
 .bg-body::before {
     content: '';
@@ -62,8 +66,10 @@ section {
     margin-bottom: 40px;
 }
 .container-fsc__img {
-    max-width: 530px;
-    max-height: 650px;
+    /* max-width: 530px;
+    max-height: 650px; */
+    max-width: 595px;
+    max-height: 730px;
     transform: translateY(-20px);
     animation: yaga 5s infinite;
     position: relative;
@@ -88,7 +94,7 @@ section {
 
 .container__fsc .btn_yellow {
     font-size: 20px;
-    padding: 30px 45px;
+    padding: 20px 45px;
     animation-iteration-count: 5;
     animation-duration: 1.5s;
     position: relative;
