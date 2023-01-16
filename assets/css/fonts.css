@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url("../assets/fonts/Raleway-Black.ttf") format(truetyoe);
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("../assets/fonts/Raleway-Bold.ttf") format(truetyoe);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("../assets/fonts/Raleway-ExtraBold.ttf") format(truetyoe);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("../assets/fonts/Raleway-ExtraLight.ttf") format(truetyoe);
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("../assets/fonts/Raleway-Light.ttf") format(truetyoe);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("../assets/fonts/Raleway-Medium.ttf") format(truetyoe);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("../assets/fonts/Raleway-Regular.ttf") format(truetyoe);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("../assets/fonts/Raleway-SemiBold.ttf") format(truetyoe);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("../assets/fonts/Raleway-Thin.ttf") format(truetyoe);
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
