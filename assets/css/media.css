@@ -99,6 +99,19 @@
     .container__about-us::after {
         top: 100px;
     }
+    /* faq */
+    /* faq */
+    .accordion__item .accordion__title {
+        font-size: 22px;
+    line-height: 32px;
+    padding: 35px 80px 35px 45px;
+    margin-bottom: 20px;
+    
+    }
+    .accordion__item .accordion__content {
+    font-size: 20px;
+    line-height: 27px;
+    }
 }
 
 @media(max-width:579.98px){
@@ -139,7 +152,21 @@
         font-size: 14px;
         line-height: 20px;
     }
+
+    /* faq */
+    .accordion__item .accordion__title {
+        font-size: 16px;
+    line-height: 32px;
+    padding: 15px 60px 15px 25px;
+    margin-bottom: 10px;
+    
+    }
+    .accordion__item .accordion__content {
+    font-size: 14px;
+    line-height: 27px;
+    }
 }
+
 
 @media(max-width:460.98px){
     /* first-screen */
