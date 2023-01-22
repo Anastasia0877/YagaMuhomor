@@ -86,6 +86,121 @@ section {
     height: 50px;
 }
 
+.container__fsc::before,
+.container__fsc::after,
+.container__about-us::before,
+.container__about-us::after,
+.container__catalog::before,
+.container__catalog::after,
+.container__faq::before,
+.container__faq::after,
+.container__books::before,
+.container__books::after,
+.container__delivery::before,
+.container__delivery::after,
+.container__video::before,
+.container__video::after,
+.container__pay::before,
+.container__pay::after{
+    content:'';
+    display: block;
+    position: absolute;
+    width:30px;
+    height: 50px;
+}
+    
+
+.container__fsc::before{
+    background: url('../img/mini-mushroom-second.svg') center/contain no-repeat;
+    transform: rotate(25deg);
+    right: 100px;
+    top: 100px;
+}
+.container__fsc::after{
+    background: url('../img/mini-mushroom-third.svg') center/contain no-repeat;
+    transform: rotate(160deg);
+    right:30%;
+    bottom:250px;
+}
+.container__about-us::before{
+    background: url('../img/mini-mushroom-fourth.svg') center/contain no-repeat;
+    transform: rotate(45deg);
+    left: 10px;
+    top: 100px;
+}
+.container__catalog::before{
+    background: url('../img/mini-mushroom-second.svg') center/contain no-repeat;
+    transform: rotate(100deg);
+    left: 10px;
+    top: 50px;
+}
+.container__catalog::after{
+    background: url('../img/mini-mushroom-third.svg') center/contain no-repeat;
+    transform: rotate(300deg);
+    right: 30px;
+    bottom: 50px;
+}
+.container__faq::before{
+    background: url('../img/mini-mushroom-first.svg') center/contain no-repeat;
+    transform: rotate(145deg);
+    left: 10px;
+    top: 50px;
+}
+.container__faq::after{
+    background: url('../img/mini-mushroom-second.svg') center/contain no-repeat;
+    transform: rotate(30deg);
+    right: 10px;
+    bottom: calc(0% - 50px);
+}
+.container__books::before{
+    background: url('../img/mini-mushroom-fourth.svg') center/contain no-repeat;
+    transform: rotate(115deg);
+    left: 20%;
+    top: 50px;
+}
+.container__books::after{
+    background: url('../img/mini-mushroom-third.svg') center/contain no-repeat;
+    transform: rotate(195deg);
+    right: 20px;
+    bottom: 50px;
+}
+.container__delivery::before{
+    background: url('../img/mini-mushroom-first.svg') center/contain no-repeat;
+    transform: rotate(245deg);
+    left: 170px;
+    top: calc(0% - 50px);
+}
+.container__delivery::after{
+    background: url('../img/mini-mushroom-second.svg') center/contain no-repeat;
+    transform: rotate(20deg);
+    right: 45px;
+    bottom: calc(0% - 150px);
+}
+.container__video::before{
+    background: url('../img/mini-mushroom-third.svg') center/contain no-repeat;
+    transform: rotate(190deg);
+    left: 50px;
+    top: calc(0% - 30px);
+}
+.container__video::after{
+    background: url('../img/mini-mushroom-fourth.svg') center/contain no-repeat;
+    transform: rotate(230deg);
+    right: 30px;
+    bottom:calc(0% - 60px);
+}
+.container__pay::before{
+    background: url('../img/mini-mushroom-second.svg') center/contain no-repeat;
+    transform: rotate(20deg);
+    left: 40px;
+    top: 50px;
+}
+.container__pay::after{
+    background: url('../img/mini-mushroom-first.svg') center/contain no-repeat;
+    transform: rotate(230deg);
+    right: 40px;
+    bottom: 50px;
+}
+
 /* first-screen */
 #first-screen {
     margin-bottom: 0;
@@ -93,6 +208,7 @@ section {
 .container__fsc {
     display: flex;
     justify-content: space-evenly;
+    position: relative;
 }
 .container-fsc__title {
     margin-bottom: 40px;
@@ -290,6 +406,7 @@ section {
     justify-content: center;
     max-width: 100%;
     padding: 0;
+    position: relative;
 }
 .container-catalog__info {
     margin-bottom: 50px;
@@ -387,8 +504,63 @@ section {
 }
 
 /* faq */
+.container__faq{
+    position: relative;
+}
 .container-faq__info {
     margin-bottom: 50px;
+    position: relative;
+}
+.container-faq__info::before{
+    content: '';
+    width: 200px;
+    height: 200px;
+    display: block;
+    background: url("../img/mushroom-second.svg") center/contain no-repeat;
+    background-size: 200px;
+    position: absolute;
+    bottom: calc(100% - 80px);
+    left: 150px;
+    animation: mushroom-second 5s infinite;
+}
+.container-faq__info::after {
+    content: '';
+    width: 100px;
+    height: 20px;
+    background-color: #666666;
+    opacity: 0.4;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    bottom: calc(100% - 90px);
+    left: 210px;
+    animation: mushroom-second-shadow 5s infinite;
+}
+@keyframes mushroom-second {
+    0% {
+        transform: translateY(0px);
+
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes mushroom-second-shadow {
+    0% {
+        opacity: 0.3;
+        width: 80px;
+    }
+    50% {
+        opacity: 0.2;
+        width: 100px;
+    }
+    100% {
+        opacity: 0.3;
+        width: 80px;
+    }
 }
 .accordion__item {
     margin: 0 auto 30px;
@@ -432,6 +604,9 @@ section {
 }
 
 /* books */
+.container__books{
+    position: relative;
+}
 .books__row {
     margin: 0 auto;
     display: grid;
@@ -494,6 +669,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .container-delivery__info {
     margin-bottom: 50px;
@@ -566,6 +742,7 @@ section {
 
 /* video */
 .container__video {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -608,6 +785,9 @@ section {
 /* pays */
 #pay{
     margin-bottom: 0px;
+}
+.container__pay{
+    position: relative;
 }
 .container-pay__info {
     margin-bottom: 50px;

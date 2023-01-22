@@ -151,7 +151,20 @@
         height: 10px;
     
     }
+    .container-faq__info::before{
+        width: 150px;
+    height: 150px;
+    background: url("../img/mushroom-second.svg") center/contain no-repeat;
+    bottom: calc(100% - 50px);
+    left: 20px;
+    }
 
+    .container-faq__info::after {
+        width: 100px;
+        height: 20px;
+        bottom: calc(100% - 70px);
+        left: 60px;
+    }
     /* books */
     .books__row {
         margin: 0 auto;
@@ -278,6 +291,29 @@
 }
 
 @media(max-width:579.98px){
+
+    .container__fsc::before,
+.container__fsc::after,
+.container__about-us::before,
+.container__about-us::after,
+.container__catalog::before,
+.container__catalog::after,
+.container__faq::before,
+.container__faq::after,
+.container__books::before,
+.container__books::after,
+.container__delivery::before,
+.container__delivery::after,
+.container__video::before,
+.container__video::after,
+.container__pay::before,
+.container__pay::after{
+    content:'';
+    display: block;
+    position: absolute;
+    width:20px;
+    height: 40px;
+}
     /* first-screen */
     .container-fsc__img {
         margin-bottom: 100px;
@@ -328,6 +364,35 @@
     font-size: 14px;
     line-height: 27px;
     }
+    .container-faq__info::before{
+        width: 100px;
+    height: 100px;
+    background: url("../img/mushroom-second.svg") center/contain no-repeat;
+    top:calc(0% - 100px);
+    left: 20px;
+    }
+
+    .container-faq__info::after {
+        width: 10px;
+        height: 10px;
+        top:calc(0% + 20px);
+        left: 42px;
+    }
+    @keyframes mushroom-second-shadow {
+        0% {
+            opacity: 0.3;
+            width: 50px;
+        }
+        50% {
+            opacity: 0.2;
+            width: 80px;
+        }
+        100% {
+            opacity: 0.3;
+            width: 50px;
+        }
+    }
+    /* books */
     .books__row {
         margin: 0 auto;
        display: flex;

@@ -17,13 +17,13 @@ $('.menu-item').on('click', function(){
 
 // catalog btns
 $('#red-sixty').click(function() {
-  $('.catalog-price-red').html('500 грн');
+  $('.catalog-price-red').html('650 грн');
 });
 $('#red-oh_eighty').click(function() {
   $('.catalog-price-red').html('1000 грн');
 });
 $('#p-sixty').click(function() {
-  $('.catalog-price-pantern').html('500 грн');
+  $('.catalog-price-pantern').html('675 грн');
 });
 $('#p-oh_eighty').click(function() {
   $('.catalog-price-pantern').html('1000 грн');
