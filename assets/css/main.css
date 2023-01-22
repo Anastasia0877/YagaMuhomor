@@ -72,6 +72,19 @@ section {
     top: 100%;
     transform: translate(-50%, 0);
 }
+.back-to-top {
+    cursor: pointer;
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    z-index: 1000;
+}
+.back-to-top img {
+    width: 50px;
+    height: 50px;
+}
 
 /* first-screen */
 #first-screen {
@@ -593,6 +606,9 @@ section {
 }
 
 /* pays */
+#pay{
+    margin-bottom: 0px;
+}
 .container-pay__info {
     margin-bottom: 50px;
 }

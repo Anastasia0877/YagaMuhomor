@@ -15,6 +15,20 @@ $('.menu-item').on('click', function(){
   $('body').removeClass("overlay");
 })  
 
+// catalog btns
+$('#red-sixty').click(function() {
+  $('.catalog-price-red').html('500 грн');
+});
+$('#red-oh_eighty').click(function() {
+  $('.catalog-price-red').html('1000 грн');
+});
+$('#p-sixty').click(function() {
+  $('.catalog-price-pantern').html('500 грн');
+});
+$('#p-oh_eighty').click(function() {
+  $('.catalog-price-pantern').html('1000 грн');
+});
+
 // accordion
 $(function() {
 	
@@ -38,36 +52,21 @@ $(function() {
   
 });
 
-// delivery-slider
-// $(document).ready(function(){
-//   $('.delivery-sleder').slick({
-//     dots:true,
-//     arrows:true,
-//     slidesToShow: 3,
-//     centerMode: true,
-//     centerPadding:"0",
-//   slidesToScroll: 1,
-//   appendArrows:".delivery-slider__arrow"
-  // responsive: [
-  //   {
-  //     breakpoint: 1120,
-  //     settings: {
-  //       arrows: true,
-  //       centerMode: true,
-  //       centerPadding: '30px',
-  //       slidesToShow: 1
-  //     }
-  //   },
-  //     {
-  //     breakpoint: 1024,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '30px',
-  //       slidesToShow: 1,
-  //       dots:true
-  //     }
-  //   }
-  // ]
-//   });
-// });
+// button-back-to-top
+function backToTop() {
+  var button = $('.back-to-top');
+  $(window).on('scroll', () => {
+      if ($(this).scrollTop() >= 200) {
+          button.fadeIn();
+      } else {
+          button.fadeOut();
+      }
+  });
+  button.on('click', (e) => {
+      e.preventDefault();
+      $('html').animate({
+          scrollTop: 0
+      }, '100');
+  })
+}
+backToTop();
